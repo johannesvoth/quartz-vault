@@ -19,7 +19,8 @@ export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.Breadcrumbs(),
     Component.ArticleTitle(),
-    Component.ContentMeta(),
+    //Component.ContentMeta(), // this gives date and "one minute read time" we replaced this with our custom "ExtendedDate" component
+    Component.ExtendedDate(),
     Component.TagList(),
   ],
   left: [
